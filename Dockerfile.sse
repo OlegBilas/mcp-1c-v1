@@ -1,0 +1,2 @@
+# Работает и на Intel, и на Apple Silicon
+FROM ghcr.io/alkoleft/mcp-bsl-context:v0.3.1-sse
