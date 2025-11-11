@@ -130,5 +130,4 @@ secrets.json
 *.mcp
 mcp-data/
 /embeddings/models
-/qdrant_storage/collections
 /qdrant_storage

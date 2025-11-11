@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "1c-platform-sse": {
+      "url": "http://localhost:9000/sse"
+    },
+    "my-1c-mcp-server": {
+      "headers": {
+
+        "x-collection-name": "1c_ut"
+      },
+      "url": "http://localhost:8000/mcp"
+    }
+  }
+}
