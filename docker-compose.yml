@@ -10,7 +10,9 @@ services:
       - "6333:6333" # REST API
       - "6334:6334" # gRPC API
     volumes:
-      - ./qdrant_storage:/qdrant/storage
+      #- ./qdrant_storage:/qdrant/storage - for Linux
+      # for Windows
+      - qdrant_storage:/qdrant/storage
     environment:
       - QDRANT__CLUSTER__ENABLED=false
     healthcheck:
@@ -94,4 +96,8 @@ services:
 networks:
   mcp-network:
     driver: bridge
+
+# for Windows
+volumes:
+  qdrant_storage:
     
